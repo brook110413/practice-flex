@@ -1,0 +1,9 @@
+@mixin title {
+  font-size: 64px;
+  line-height: 84px;
+}
+
+@mixin content {
+  font-size: 24px;
+  line-height: 42px;
+}
