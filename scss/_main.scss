@@ -17,6 +17,7 @@ h2 {
 }
 
 .container {
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -31,13 +32,12 @@ h2 {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  margin-bottom: 56px;
+  margin-bottom: 64px;
 
   h1 {
     font-size: 80px;
     line-height: 94px;
-    margin-bottom: 27px;
-    font-weight: 800;
+    font-weight: bold;
   }
 
   p {
@@ -45,16 +45,16 @@ h2 {
   }
 
   &-title {
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 32px;
   }
 
   &-content {
-    margin-bottom: 63px;
+    margin-bottom: 48px;
   }
 
   &-socialMedia {
     display: flex;
-    justify-content: space-between;
 
     li {
       margin: 0 8px;
@@ -66,12 +66,13 @@ h2 {
   margin-bottom: 56px;
 
   h2 {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     font-weight: 500;
   }
 
   p {
     font-weight: 600;
+    margin-bottom: 8px;
   }
 
   img {
@@ -79,10 +80,10 @@ h2 {
   }
 
   &-content {
-    & :last-child {
+    & :last-child p {
       margin: 0 auto;
-      padding-bottom: 31px;
-      margin-bottom: 31px;
+      padding-bottom: 12px;
+      margin-bottom: 32px;
       width: 384px;
       border-bottom: 1px solid #000;
     }
@@ -93,6 +94,7 @@ h2 {
 
     span {
       position: relative;
+      font-weight: 600;
 
       &::before {
         position: absolute;
@@ -115,6 +117,8 @@ h2 {
   color: #ffffff;
   font-weight: 500;
   padding: 64px 0 160px 0;
+  text-align: center;
+  margin-bottom: 64px;
 
   h2 {
     margin-bottom: 16px;
@@ -132,23 +136,23 @@ h2 {
     margin-bottom: 48px;
   }
 
-  &-photo-up {
-    margin-bottom: 40px;
-  }
-
-  &-photo-down {
+  &-photo {
     display: flex;
     justify-content: center;
-    margin: 0 12px;
+    flex-wrap: wrap;
+    width: 1224px;
+
+    img {
+      margin: 0 12px 40px;
+    }
   }
 }
 
 .otherWorks {
-  background-image: url(../img/photo-1561291386-5be50364cfb5.png);
-  background-position: center 361px;
-  background-repeat: no-repeat;
-  height: 1919px;
-  padding: 64px 0 160px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
   p {
     font-size: 20px;
@@ -161,20 +165,33 @@ h2 {
       font-weight: 500;
     }
 
-    margin-bottom: 48px;
+    margin-bottom: 128px;
   }
 
   &-photo {
+    background-image: url(../img/photo-1561291386-5be50364cfb5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
+    padding-bottom: 160px;
 
     li {
       margin: 0 12px;
     }
 
+    img {
+      margin-bottom: 16px;
+    }
+
     .poster {
       display: flex;
       justify-content: center;
-      margin-bottom: 58px;
+      margin-bottom: 56px;
+
+      &:first-child {
+        margin-top: -80px;
+      }
     }
 
     .photography {
@@ -194,6 +211,7 @@ h2 {
   background: #000;
   color: #ffffff;
   padding: 64px 0 80px;
+  text-align: center;
 
   p {
     margin-top: 16px;
